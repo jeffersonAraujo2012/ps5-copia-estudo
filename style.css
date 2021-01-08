@@ -689,6 +689,26 @@ body{
     margin-right: 20px;
 }
 
+/* Estilo da seção notas */
+.notas{
+    width: 70%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.notas img{
+    width: 200px;
+    height: 81px;
+}
+
+.notas p:not(.copyright){
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    font-weight: 300;
+    text-align: left;
+}
+
+
 /* Estilo footer */
 
 footer{
