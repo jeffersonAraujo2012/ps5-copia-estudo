@@ -1,0 +1,550 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Estilo do cabeçalho*/
+
+/* -- Faixa logo da Sony -- */
+.logo-sony{
+    width: 100%;
+    height: 36px;
+    background: black;
+}
+
+.logo-sony img{
+    position: relative;
+    float: right;
+    height: 40%;
+    margin-right: 10px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+/* -- Navegação Geral -- */
+.nav-geral{
+    width: 100%;
+    height: 36px;
+    padding: 3px 20px;
+    box-sizing: border-box;
+}
+
+.nav-geral *{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav-geral li{
+    color: rgb(120,120,120);
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.nav-geral li img{
+    vertical-align: middle;
+}
+
+.links-gerais, 
+.links-gerais ul,
+.links-clientes-busca, 
+.links-clientes-busca ul{
+    height: 36px;
+}
+
+.links-gerais > img,
+.links-gerais li,
+.links-clientes-busca li,
+.links-clientes-busca button,
+.links-clientes-busca > img{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.links-clientes-busca{
+    float: right;
+}
+
+.links-clientes-busca button{
+    color: white;
+    background: rgb(54,54,54);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 2px;
+    border: none;
+    border: 2px solid rgb(54,54,54);
+    border-radius: 20px;
+    margin: 0 20px 0 10px;
+}
+
+.links-clientes-busca button:hover{
+    background-clip: content-box;
+    margin: 0 20px 0 6px;
+    cursor: pointer;
+}
+
+.links-clientes-busca button:hover p{
+    padding: 9px 12px;
+}
+
+.links-clientes-busca button p{
+    padding: 7px 10px;
+}
+
+/* -- Navegação PS5 -- */
+.nav-ps5{
+    position: relative;
+    width: 100%;
+    height: 75px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.nav-ps5 *{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav-ps5 > img{
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.nav-ps5 ul{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.nav-ps5 li{
+    height: 75px;
+    box-sizing: border-box;
+    border-bottom: 4px solid white;
+}
+
+.nav-ps5 li:hover{
+    color: rgb(1,114,206);
+    cursor: pointer;
+}
+
+.nav-ps5 li:first-child{
+    color: rgb(1,114,206);
+    border-bottom: 4px solid rgb(1,114,206);
+}
+
+.nav-ps5 li:first-child a{
+    transform: translate(0,-50%);
+}
+
+.nav-ps5 li a{
+    position: relative;
+    top: 50%;
+    padding: 0 12px;
+    transform: translate(0,-50%);
+}
+
+/* Estilo Banner Apresentação */
+.banner-apresentacao{
+    width: 100%;
+    height: 110vh;
+    background: url("./Imagens/banner-principal-ps5.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.banner-apresentacao div{
+    position: relative;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-apresentacao img{
+    width: 10%;
+}
+
+.banner-apresentacao h1{
+    color: whitesmoke;
+    font-size: 3em;
+    margin: 30px 0 40px;
+}
+
+.banner-apresentacao button{
+    color: rgb(31,31,42);
+    background: whitesmoke;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border: 2px solid whitesmoke;
+    border-radius: 25px;
+    margin: 0 20px 0 10px;
+}
+
+.banner-apresentacao button:hover{
+    background-clip: content-box;
+    margin: -4px 20px 0 10px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.banner-apresentacao button:hover p{
+    padding: 11px 12px;
+}
+
+.banner-apresentacao button p{
+    padding: 10px 10px;
+}
+
+/* Estilo Seção Play No Has Limits */
+.play-no-has-limits{
+    background: rgb(238,238,238);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.play-no-has-limits h1{
+    font-weight: 300;
+    color: black;
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.play-no-has-limits iframe{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.trailers iframe{
+    width: 203px;
+    height: 114px;
+    margin: 50px 8px;
+}
+
+.play-no-has-limits p:not(.observacao){
+    color: rgb(54,54,54);
+    width: 560px;
+    line-height: 1.5em;
+    margin: 0 auto;
+}
+
+.observacao{
+    margin-top: 25px;
+    font-size: 0.75em;
+}
+
+/* Estilo da Seção Veloz como um raio */
+.veloz-como-um-raio{
+    margin: 30px auto;
+    margin-bottom: 50px;
+    width: 70%;
+    text-align: center;
+}
+
+.veloz-como-um-raio > img{
+    width: 100%;
+}
+
+.veloz-como-um-raio h2{
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.subtitulo{
+    color: rgb(100,100,100);
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.especificacao{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin: 0 2%;
+}
+
+.especificacao *{
+    vertical-align: top;
+}
+
+.especificacao > img{
+    width: 30%;
+}
+
+.especificacao-titulo{
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+.especificacao-descricao{
+    color: rgb(54,54,54);
+    line-height: 1.5em;
+    margin: 0 auto;
+}
+
+/* Estilo Seção Recursos */
+.recursos{
+    width: 100%;
+    height: 170vh;
+    background: url("./Imagens/bg-horizon-zero-dawn.jpg");
+    background-size: cover;
+    background-position: left bottom;
+    padding: 60px 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.recursos h2{
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.subtitulo-2{
+    color: rgb(200,200,200);
+    font-size: 1.4em;
+    line-height: 1.4em;
+    font-weight: 300;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.recursos div{
+    text-align: left;
+    width: 50%;
+    margin: 70px auto 0 30%;
+}
+
+.recursos div img{
+    width: 20%;
+    float: left;
+}
+
+.recursos div h4{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.recursos div p{
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+/* Estilo Seção Edicoes PS5 */
+.edicoes-ps5{
+    padding: 50px;
+    text-align: center;
+}
+
+.edicoes-ps5 h2{
+    width: 50%;
+    font-size: 2.5em;
+    line-height: 1.2em;
+    font-weight: 300;
+    margin: 0 auto 2em;
+    text-align: center;
+}
+
+.selecao{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.selecao span{
+    display: inline-block;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.selecao span:first-child{
+    border-bottom: 4px solid rgb(1,114,206);
+}
+
+.selecao span:last-child{
+    color: rgb(120,120,120);
+    border-bottom: 4px solid rgb(200,200,200);
+}
+
+.edicao-descricao{
+    text-align: center;
+}
+
+.edicao-descricao div{
+    display: inline-block;
+    width: 35%;
+}
+
+.edicao-descricao h3{
+    font-size: 1.8em;
+    font-weight: 300;
+    margin: 2em 0 1em;
+    text-align: left;
+}
+
+.edicao-descricao h4{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 1em 0;
+    font-weight: 400;
+    text-align: left;
+}
+
+.edicao-descricao p{
+    line-height: 1.5em;
+    font-weight: 300;
+    text-align: left;
+}
+
+.edicao-descricao img{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    transform: translate(0,20%);
+}
+
+.edicoes-ps5 button{
+    color: whitesmoke;
+    background: rgb(215,61,15);
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border: 2px solid rgb(215,61,15);;
+    border-radius: 25px;
+    margin-top: 20px; 
+}
+
+.edicoes-ps5 button:hover{
+    background-clip: content-box;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.edicoes-ps5 button:hover p{
+    padding: 12px 12px;
+}
+
+.edicoes-ps5 button p{
+    padding: 10px 10px;
+}
+
+/* Estilo da seção encartes-jogos */
+.encartes-jogos{
+    width: 100%;
+    background: rgb(238,238,238);
+    text-align: center;
+    color: rgb(0,0,0);
+}
+.encartes-jogos h2{
+    font-size: 2.5em;
+    font-weight: 300;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.encartes-jogos iframe{
+    margin-bottom: 60px;
+}
+
+.linha{
+    padding: 0 50px 60px;
+}
+
+.encarte-col-2{
+    width: 35%;
+    margin: 0 10px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.encarte-col-2 img{
+    width: 100%;
+}
+
+.encarte-col-2 h3{
+    font-size: 1.7em;
+    margin: 1em 0;
+}
+
+.encarte-col-2 > p{
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.encarte-col-2 button{
+    background: rgb(1,114,206);
+    background-clip: content-box;
+    border: 2px solid rgb(238,238,238);
+    color: whitesmoke;
+    border-radius: 25px;
+    padding: 2px;
+    margin-left: -4px;
+    transition: 150ms;
+}
+
+.encarte-col-2 button:hover{
+    border-color: rgb(1,114,206);
+    cursor: pointer;
+}
+
+.encarte-col-2 button p{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 14px 10px 14px;
+}
+
+/*Estilo da seção ps-plus-colection*/
+.ps-plus-colection{
+    width: 100%;
+    height: 110vh;
+    color: rgb(54,54,54);
+    background: url("imagens/bg-ps-plus-collection.jpg");
+    background-size: 120%;
+    background-position: bottom right;
+}
+
+/*Estilo da seção audio 3d*/
+.audio-3d{
+    width: 100%;
+    height: 110vh;
+    color: whitesmoke;
+    background: url("imagens/bg-miles-morales.jpg");
+    background-size: 120%;
+    background-position: bottom right;
+}
+
+/*Estilo da seção heighten your senses*/
+.heigthen-your-senses{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+}
+
+/*Estilo da seção criacao-conteudo-entreterimento */
+.criacao-conteudo-entreterimento{
+    background: rgb(238,238,238);
+    color: rgb(54,54,54);
+    height: auto;
+}
+
+.criacao-conteudo-entreterimento div img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+/* Estilo footer */
+
+footer{
+    background: rgb(0,67,156);
+}
