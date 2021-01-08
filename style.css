@@ -605,15 +605,77 @@ body{
     font-weight: 300;
 }
 
-
 /*Estilo da seção heighten your senses*/
 .heigthen-your-senses{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     padding: 60px 0;
 }
 
+.heigthen-your-senses h2{
+    font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.heigthen-your-senses > p{
+    width: 60%;
+    line-height: 1.5em;
+    margin: 3em auto;
+    text-align: center;
+}
+
+.heigthen-your-senses button{
+    background: rgb(1,114,206);
+    background-clip: content-box;
+    border: 2px solid rgb(1,114,206,0);
+    color: whitesmoke;
+    border-radius: 25px;
+    padding: 2px;
+    margin-top: 3em;
+    transition: 150ms;
+}
+
+.heigthen-your-senses button:hover{
+    border-color: rgb(1,114,206);
+    cursor: pointer;
+}
+
+.heigthen-your-senses button p{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 14px 10px 14px;
+}
+
+.heigthen-your-senses div.linha{
+    width: 100%;
+    text-align: left;
+    padding-bottom: 0;
+    margin-top: 3em;
+}
+
+.heigthen-your-senses div.linha img{
+    width: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.heigthen-your-senses div.linha div{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+}
+
+.heigthen-your-senses div.linha h3{
+    font-size: 1.9em;
+    font-weight: 300;
+    margin: 0 0 1em;
+}
+
+.heigthen-your-senses div.linha p{
+    line-height: 1.5em;
+}
 /*Estilo da seção criacao-conteudo-entreterimento */
 .criacao-conteudo-entreterimento{
     background: rgb(238,238,238);
