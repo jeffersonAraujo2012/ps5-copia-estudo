@@ -626,6 +626,10 @@ body{
     text-align: center;
 }
 
+.heigthen-your-senses iframe{
+    margin-bottom: 3em;
+}
+
 .heigthen-your-senses button{
     background: rgb(1,114,206);
     background-clip: content-box;
@@ -701,11 +705,19 @@ body{
     height: 81px;
 }
 
-.notas p:not(.copyright){
+.notas p{
     line-height: 1.5em;
-    margin-bottom: 1em;
     font-weight: 300;
+    font-size: 0.9em;
     text-align: left;
+}
+
+.notas > p{
+    margin-bottom: 1em;
+}
+
+.copyright{
+    margin: 30px 0;;
 }
 
 
