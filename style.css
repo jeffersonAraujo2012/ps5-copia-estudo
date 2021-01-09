@@ -720,9 +720,68 @@ body{
     margin: 30px 0;;
 }
 
-
 /* Estilo footer */
 
 footer{
     background: rgb(0,67,156);
+    padding: 60px 0;
+    color: whitesmoke;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+.footer-conteudo{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer-conteudo *{
+    vertical-align: top;
+}
+
+.footer-regiao{
+    display: inline-block;
+}
+
+.footer-regiao img{
+    width: 100px;
+    display: block;
+    margin-bottom: 2em;
+}
+
+.footer-regiao a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.footer-regiao a::before{
+    content: url("Imagens/language-24px.svg");
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.footer-conteudo ul{
+    margin-left: 30px;
+    float: right;
+}
+
+.footer-conteudo ul:nth-of-type(2){
+    width: 120px;
+}
+
+.footer-conteudo li{
+    margin-bottom: 1em;
+}
+
+.footer-copyright{
+    font-size: 1.1em;
+    clear: both;
+}
+
+.footer-copyright img{
+    width: 150px;
+}
+
+.footer-copyright p{
+    margin-top: 1em;
 }
