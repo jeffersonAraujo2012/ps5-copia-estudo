@@ -1,10 +1,12 @@
-/* Estilos gerais */
-body{
+/* <<<< ESTILOS GERAIS >>>> */
+
+body {
     font-family: 'Roboto', sans-serif;
 }
 
 /* --GERAL TAG BUTTON-- */
-button{
+
+button {
     background-clip: content-box !important;
     border-radius: 25px;
     padding: 2px;
@@ -12,91 +14,113 @@ button{
     transition: 150ms;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-button p{
+button p {
     font-size: 1.2em;
     font-weight: bold;
     padding: 10px 14px 10px 14px;
 }
 
+/* --FIM GERAL BUTTON-- */
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/* <<<< FIM ESTILOS GERAIS >>>> */
+
 /*Estilo do cabeçalho*/
 
 /* -- Faixa logo da Sony -- */
-.logo-sony{
+
+.logo-sony {
     width: 100%;
     height: 36px;
     background: black;
 }
 
-.logo-sony img{
+.logo-sony img {
     position: relative;
     float: right;
     height: 40%;
     margin-right: 10px;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
 }
 
 /* -- Navegação Geral -- */
-.nav-geral{
+
+.nav-geral {
     width: 100%;
     height: 36px;
     padding: 3px 20px;
     box-sizing: border-box;
 }
 
-.nav-geral *{
+.nav-geral * {
     display: inline-block;
     vertical-align: top;
 }
 
-.nav-geral li{
-    color: rgb(120,120,120);
+.nav-geral li {
+    color: rgb(120, 120, 120);
     font-size: 0.8em;
     margin-left: 10px;
+    transition: 150ms;
+    cursor: pointer;
 }
 
-.nav-geral li img{
+.nav-geral svg:last-child {
+    fill: rgb(120, 120, 120);
+    transition: 150ms;
+}
+
+.nav-geral li:hover {
+    color: rgb(1, 114, 206);
+}
+
+.nav-geral li:hover svg:last-child {
+    fill: rgb(1, 114, 206);
+}
+
+.nav-geral li svg {
     vertical-align: middle;
 }
 
-.links-gerais, 
-.links-gerais ul,
-.links-clientes-busca, 
-.links-clientes-busca ul{
+.links-gerais, .links-gerais ul, .links-clientes-busca, .links-clientes-busca ul {
     height: 36px;
 }
 
-.links-gerais > img,
-.links-gerais li,
-.links-clientes-busca li,
-.links-clientes-busca button,
-.links-clientes-busca > img{
+.links-gerais>img, .links-gerais li, .links-clientes-busca li, .links-clientes-busca button, .links-clientes-busca>img {
     position: relative;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
 }
 
-.links-clientes-busca{
+.links-clientes-busca {
     float: right;
 }
 
-.links-clientes-busca button{
+.links-clientes-busca button {
     color: white;
-    background: rgb(54,54,54);
-    border: 2px solid rgb(54,54,54,0);
+    background: rgb(54, 54, 54);
+    border: 2px solid rgb(54, 54, 54, 0);
 }
 
-.links-clientes-busca button:hover{
-    border: 2px solid rgb(54,54,54,1);
+.links-clientes-busca button:hover {
+    border: 2px solid rgb(54, 54, 54, 1);
     cursor: pointer;
 }
 
 /* -- Navegação PS5 -- */
-.nav-ps5{
+
+.nav-ps5 {
     position: relative;
     width: 100%;
     height: 75px;
@@ -104,55 +128,56 @@ button p{
     box-sizing: border-box;
 }
 
-.nav-ps5 *{
+.nav-ps5 * {
     display: inline-block;
     vertical-align: top;
 }
 
-.nav-ps5 > img{
+.nav-ps5>img {
     position: relative;
     height: 70%;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
 }
 
-.nav-ps5 ul{
+.nav-ps5 ul {
     position: absolute;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     font-size: 0.9em;
     font-weight: 500;
 }
 
-.nav-ps5 li{
+.nav-ps5 li {
     height: 75px;
     box-sizing: border-box;
     border-bottom: 4px solid white;
 }
 
-.nav-ps5 li:hover{
-    color: rgb(1,114,206);
+.nav-ps5 li:hover {
+    color: rgb(1, 114, 206);
     cursor: pointer;
 }
 
-.nav-ps5 li:first-child{
-    color: rgb(1,114,206);
-    border-bottom: 4px solid rgb(1,114,206);
+.nav-ps5 li:first-child {
+    color: rgb(1, 114, 206);
+    border-bottom: 4px solid rgb(1, 114, 206);
 }
 
-.nav-ps5 li:first-child a{
-    transform: translate(0,-50%);
+.nav-ps5 li:first-child a {
+    transform: translate(0, -50%);
 }
 
-.nav-ps5 li a{
+.nav-ps5 li a {
     position: relative;
     top: 50%;
     padding: 0 12px;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
 }
 
 /* Estilo Banner Apresentação */
-.banner-apresentacao{
+
+.banner-apresentacao {
     width: 100%;
     height: 110vh;
     background: url("./Imagens/banner-principal-ps5.png");
@@ -161,125 +186,122 @@ button p{
     text-align: center;
 }
 
-.banner-apresentacao div{
+.banner-apresentacao div {
     position: relative;
     top: 50%;
     left: 33%;
     transform: translate(-50%, -50%);
 }
 
-.banner-apresentacao img{
+.banner-apresentacao img {
     width: 10%;
 }
 
-.banner-apresentacao h1{
+.banner-apresentacao h1 {
     color: whitesmoke;
     font-size: 3em;
     margin: 30px 0 40px;
 }
 
-.banner-apresentacao button{
-    color: rgb(31,31,42);
+.banner-apresentacao button {
+    color: rgb(31, 31, 42);
     background: whitesmoke;
-    border: 2px solid rgb(245,245,245,0);
+    border: 2px solid rgb(245, 245, 245, 0);
 }
 
-.banner-apresentacao button:hover{
-    border: 2px solid rgb(245,245,245,1);
+.banner-apresentacao button:hover {
+    border: 2px solid rgb(245, 245, 245, 1);
     cursor: pointer;
 }
 
 /* Estilo Seção Play No Has Limits */
-.play-no-has-limits{
-    background: rgb(238,238,238);
+
+.play-no-has-limits {
+    background: rgb(238, 238, 238);
     text-align: center;
     padding: 50px 0;
 }
 
-.play-no-has-limits h1{
+.play-no-has-limits h1 {
     font-weight: 300;
     color: black;
     font-size: 3em;
     margin-bottom: 15px;
 }
 
-.play-no-has-limits iframe{
+.play-no-has-limits iframe {
     margin-top: 35px;
     margin-bottom: 20px;
 }
 
-.trailers iframe{
+.trailers iframe {
     width: 203px;
     height: 114px;
     margin: 50px 8px;
 }
 
-.play-no-has-limits p:not(.observacao){
-    color: rgb(54,54,54);
+.play-no-has-limits p:not(.observacao) {
+    color: rgb(54, 54, 54);
     width: 560px;
     line-height: 1.5em;
     margin: 0 auto;
 }
 
-.observacao{
+.observacao {
     margin-top: 25px;
     font-size: 0.75em;
 }
 
 /* Estilo da Seção Veloz como um raio */
-.veloz-como-um-raio{
+
+.veloz-como-um-raio {
     margin: 30px auto;
     margin-bottom: 50px;
     width: 70%;
     text-align: center;
 }
 
-.veloz-como-um-raio > img{
+.veloz-como-um-raio>img {
     width: 100%;
 }
 
-.veloz-como-um-raio h2{
-    font-size: 2.5em;
-    font-weight: 300;
-    margin-bottom: 1em;
-}
-
-.subtitulo{
-    color: rgb(100,100,100);
+.subtitulo {
+    color: rgb(100, 100, 100);
     font-size: 1.5em;
     line-height: 1.5em;
     font-weight: 300;
     margin-bottom: 40px;
 }
 
-.especificacao{
+.especificacao {
     display: inline-block;
     vertical-align: top;
     width: 45%;
     margin: 0 2%;
 }
 
-.especificacao *{
+.especificacao * {
     vertical-align: top;
 }
 
-.especificacao > img{
+.especificacao>img {
     width: 30%;
 }
 
-.especificacao-titulo{
+.especificacao-titulo {
     font-size: 1.5em;
     margin: 1em 0;
 }
 
-.especificacao-descricao{
-    color: rgb(54,54,54);
+.especificacao-descricao {
+    color: rgb(54, 54, 54);
     line-height: 1.5em;
     margin: 0 auto;
 }
 
 /* Estilo Seção Recursos */
-.recursos{
+
+.recursos {
     width: 100%;
     height: 170vh;
     background: url("./Imagens/bg-horizon-zero-dawn.jpg");
@@ -291,14 +313,8 @@ button p{
     color: whitesmoke;
 }
 
-.recursos h2{
-    font-size: 2.5em;
-    font-weight: 300;
-    margin-bottom: 1em;
-}
-
-.subtitulo-2{
-    color: rgb(200,200,200);
+.subtitulo-2 {
+    color: rgb(200, 200, 200);
     font-size: 1.4em;
     line-height: 1.4em;
     font-weight: 300;
@@ -306,34 +322,35 @@ button p{
     margin: 0 auto;
 }
 
-.recursos div{
+.recursos div {
     text-align: left;
     width: 50%;
     margin: 70px auto 0 30%;
 }
 
-.recursos div img{
+.recursos div img {
     width: 20%;
     float: left;
 }
 
-.recursos div h4{
+.recursos div h4 {
     font-size: 1.5em;
     margin-bottom: 1em;
 }
 
-.recursos div p{
+.recursos div p {
     line-height: 1.5em;
     font-weight: 300;
 }
 
 /* Estilo Seção Edicoes PS5 */
-.edicoes-ps5{
+
+.edicoes-ps5 {
     padding: 50px;
     text-align: center;
 }
 
-.edicoes-ps5 h2{
+.edicoes-ps5 h2 {
     width: 50%;
     font-size: 2.5em;
     line-height: 1.2em;
@@ -342,44 +359,44 @@ button p{
     text-align: center;
 }
 
-.selecao{
+.selecao {
     width: 40%;
     margin: 0 auto;
     text-align: center;
 }
 
-.selecao span{
+.selecao span {
     display: inline-block;
     padding: 10px 10px;
     cursor: pointer;
 }
 
-.selecao span:first-child{
-    border-bottom: 4px solid rgb(1,114,206);
+.selecao span:first-child {
+    border-bottom: 4px solid rgb(1, 114, 206);
 }
 
-.selecao span:last-child{
-    color: rgb(120,120,120);
-    border-bottom: 4px solid rgb(200,200,200);
+.selecao span:last-child {
+    color: rgb(120, 120, 120);
+    border-bottom: 4px solid rgb(200, 200, 200);
 }
 
-.edicao-descricao{
+.edicao-descricao {
     text-align: center;
 }
 
-.edicao-descricao div{
+.edicao-descricao div {
     display: inline-block;
     width: 35%;
 }
 
-.edicao-descricao h3{
+.edicao-descricao h3 {
     font-size: 1.8em;
     font-weight: 300;
     margin: 2em 0 1em;
     text-align: left;
 }
 
-.edicao-descricao h4{
+.edicao-descricao h4 {
     font-size: 1.2em;
     line-height: 1.5em;
     margin: 1em 0;
@@ -387,54 +404,50 @@ button p{
     text-align: left;
 }
 
-.edicao-descricao p{
+.edicao-descricao p {
     line-height: 1.5em;
     font-weight: 300;
     text-align: left;
 }
 
-.edicao-descricao img{
+.edicao-descricao img {
     position: relative;
     display: inline-block;
     width: 30%;
     vertical-align: top;
-    transform: translate(0,20%);
+    transform: translate(0, 20%);
 }
 
-.edicoes-ps5 button{
+.edicoes-ps5 button {
     color: whitesmoke;
-    background: rgb(215,61,15);
-    border: 2px solid rgb(215,61,15,0);
+    background: rgb(215, 61, 15);
+    border: 2px solid rgb(215, 61, 15, 0);
 }
 
-.edicoes-ps5 button:hover{
-    border: 2px solid rgb(215,61,15,1);
+.edicoes-ps5 button:hover {
+    border: 2px solid rgb(215, 61, 15, 1);
     cursor: pointer;
 }
 
 /* Estilo da seção encartes-jogos */
-.encartes-jogos{
+
+.encartes-jogos {
     width: 100%;
-    background: rgb(238,238,238);
+    background: rgb(238, 238, 238);
     text-align: center;
-    color: rgb(0,0,0);
-}
-.encartes-jogos h2{
-    font-size: 2.5em;
-    font-weight: 300;
-    padding: 1em 0;
-    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 50px;
 }
 
-.encartes-jogos iframe{
+.encartes-jogos iframe {
     margin-bottom: 60px;
 }
 
-.linha{
+.linha {
     padding: 0 50px 60px;
 }
 
-.encarte-col-2{
+.encarte-col-2 {
     width: 35%;
     margin: 0 10px;
     display: inline-block;
@@ -442,72 +455,74 @@ button p{
     vertical-align: top;
 }
 
-.encarte-col-2 img{
+.encarte-col-2 img {
     width: 100%;
 }
 
-.encarte-col-2 h3{
+.encarte-col-2 h3 {
     font-size: 1.7em;
     margin: 1em 0;
 }
 
-.encarte-col-2 > p{
+.encarte-col-2>p {
     line-height: 1.5em;
     margin-bottom: 0.5em;
 }
 
-.encarte-col-2 button{
-    background: rgb(1,114,206);
-    border: 2px solid rgb(238,238,238,0);
+.encarte-col-2 button {
+    background: rgb(1, 114, 206);
+    border: 2px solid rgb(238, 238, 238, 0);
     color: whitesmoke;
 }
 
-.encarte-col-2 button:hover{
-    border-color: rgb(1,114,206);
+.encarte-col-2 button:hover {
+    border-color: rgb(1, 114, 206);
 }
 
 /*Estilo da seção ps-plus-colection*/
-.ps-plus-colection{
+
+.ps-plus-colection {
     position: relative;
     width: 100%;
     height: 110vh;
-    color: rgb(32,32,32);
+    color: rgb(32, 32, 32);
     background: url("imagens/bg-ps-plus-collection.jpg");
     background-size: 120%;
     background-position: bottom right;
 }
 
-.ps-plus-colection > div{
+.ps-plus-colection>div {
     position: relative;
     width: 35%;
     margin-left: calc(15% + 20px);
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
 }
 
-.ps-plus-colection h3{
+.ps-plus-colection h3 {
     font-size: 1.9em;
     font-weight: 300;
     margin: 0 0 1em;
 }
 
-.ps-plus-colection div > p{
+.ps-plus-colection div>p {
     line-height: 1.5em;
     margin-bottom: 2em;
 }
 
-.ps-plus-colection button{
-    background: rgb(1,114,206);
-    border: 2px solid rgb(1,114,206,0);
+.ps-plus-colection button {
+    background: rgb(1, 114, 206);
+    border: 2px solid rgb(1, 114, 206, 0);
     color: whitesmoke;
 }
 
-.ps-plus-colection button:hover{
-    border-color: rgb(1,114,206);
+.ps-plus-colection button:hover {
+    border-color: rgb(1, 114, 206);
 }
 
 /*Estilo da seção audio 3d*/
-.audio-3d{
+
+.audio-3d {
     position: relative;
     width: 100%;
     height: 110vh;
@@ -518,21 +533,18 @@ button p{
     padding: 60px 0;
 }
 
-.audio-3d h2{
-    font-size: 2.5em;
-    font-weight: 300;
-    padding-bottom: 0.5em;
-    text-align: center;
+.audio-3d h2 {
+    margin-bottom: 0.5em;
 }
 
-.audio-3d > p{
+.audio-3d>p {
     width: 40%;
     line-height: 1.5em;
     margin: 0 auto 2em;
     text-align: center;
 }
 
-.audio-3d div{
+.audio-3d div {
     position: absolute;
     text-align: left;
     width: 50%;
@@ -540,189 +552,188 @@ button p{
     bottom: 60px;
 }
 
-.audio-3d div img{
+.audio-3d div img {
     width: 100px;
     margin-right: 20px;
     margin-bottom: 20px;
     float: left;
 }
 
-.audio-3d div h4{
+.audio-3d div h4 {
     font-size: 1.5em;
     margin-bottom: 1em;
 }
 
-.audio-3d div p{
+.audio-3d div p {
     line-height: 1.5em;
     font-weight: 300;
 }
 
 /*Estilo da seção heighten your senses*/
-.heigthen-your-senses{
+
+.heigthen-your-senses {
     width: 80%;
     margin: 0 auto;
     text-align: center;
     padding: 60px 0;
 }
 
-.heigthen-your-senses h2{
-    font-size: 2.5em;
-    font-weight: 300;
-    text-align: center;
-}
-
-.heigthen-your-senses > p{
+.heigthen-your-senses>p {
     width: 60%;
     line-height: 1.5em;
     margin: 3em auto;
     text-align: center;
 }
 
-.heigthen-your-senses iframe{
+.heigthen-your-senses iframe {
     margin-bottom: 3em;
 }
 
-.heigthen-your-senses button{
-    background: rgb(1,114,206);
-    border: 2px solid rgb(1,114,206,0);
+.heigthen-your-senses button {
+    background: rgb(1, 114, 206);
+    border: 2px solid rgb(1, 114, 206, 0);
     color: whitesmoke;
     margin-top: 2em;
 }
 
-.heigthen-your-senses button:hover{
-    border-color: rgb(1,114,206);
+.heigthen-your-senses button:hover {
+    border-color: rgb(1, 114, 206);
 }
 
-.heigthen-your-senses div.linha{
+.heigthen-your-senses div.linha {
     width: 100%;
     text-align: left;
     padding-bottom: 0;
     margin-top: 3em;
 }
 
-.heigthen-your-senses div.linha img{
+.heigthen-your-senses div.linha img {
     width: 50%;
     display: inline-block;
     margin-right: 20px;
 }
 
-.heigthen-your-senses div.linha div{
+.heigthen-your-senses div.linha div {
     display: inline-block;
     vertical-align: top;
     width: 45%;
 }
 
-.heigthen-your-senses div.linha h3{
+.heigthen-your-senses div.linha h3 {
     font-size: 1.9em;
     font-weight: 300;
     margin: 0 0 1em;
 }
 
-.heigthen-your-senses div.linha p{
+.heigthen-your-senses div.linha p {
     line-height: 1.5em;
 }
+
 /*Estilo da seção criacao-conteudo-entreterimento */
-.criacao-conteudo-entreterimento{
-    background: rgb(238,238,238);
-    color: rgb(54,54,54);
+
+.criacao-conteudo-entreterimento {
+    background: rgb(238, 238, 238);
+    color: rgb(54, 54, 54);
     height: auto;
 }
 
-.criacao-conteudo-entreterimento div img{
+.criacao-conteudo-entreterimento div img {
     width: 100px;
     height: 100px;
     margin-right: 20px;
 }
 
 /* Estilo da seção notas */
-.notas{
+
+.notas {
     width: 70%;
     margin: 0 auto;
     padding: 60px 0;
 }
 
-.notas img{
+.notas img {
     width: 200px;
     height: 81px;
 }
 
-.notas p{
+.notas p {
     line-height: 1.5em;
     font-weight: 300;
     font-size: 0.9em;
     text-align: left;
 }
 
-.notas > p{
+.notas>p {
     margin-bottom: 1em;
 }
 
-.copyright{
-    margin: 30px 0;;
+.copyright {
+    margin: 30px 0;
+    ;
 }
 
 /* Estilo footer */
 
-footer{
-    background: rgb(0,67,156);
+footer {
+    background: rgb(0, 67, 156);
     padding: 60px 0;
     color: whitesmoke;
     font-size: 0.9em;
     line-height: 1.5em;
 }
 
-.footer-conteudo{
+.footer-conteudo {
     width: 70%;
     margin: 0 auto;
 }
 
-.footer-conteudo *{
+.footer-conteudo * {
     vertical-align: top;
 }
 
-.footer-regiao{
+.footer-regiao {
     display: inline-block;
 }
 
-.footer-regiao img{
+.footer-regiao img {
     width: 100px;
     display: block;
     margin-bottom: 2em;
 }
 
-.footer-regiao a{
+.footer-regiao a {
     color: whitesmoke;
     text-decoration: none;
 }
 
-.footer-regiao a::before{
+.footer-regiao a::before {
     content: url("Imagens/language-24px.svg");
     vertical-align: top;
     margin-right: 10px;
 }
 
-.footer-conteudo ul{
+.footer-conteudo ul {
     margin-left: 30px;
     float: right;
 }
 
-.footer-conteudo ul:nth-of-type(2){
+.footer-conteudo ul:nth-of-type(2) {
     width: 120px;
 }
 
-.footer-conteudo li{
+.footer-conteudo li {
     margin-bottom: 1em;
 }
 
-.footer-copyright{
+.footer-copyright {
     font-size: 1.1em;
     clear: both;
 }
 
-.footer-copyright img{
+.footer-copyright img {
     width: 150px;
 }
 
-.footer-copyright p{
+.footer-copyright p {
     margin-top: 1em;
 }
