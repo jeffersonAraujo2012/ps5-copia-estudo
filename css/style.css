@@ -180,7 +180,7 @@ h2 {
 .banner-apresentacao {
     width: 100%;
     height: 110vh;
-    background: url("./Imagens/banner-principal-ps5.png");
+    background: url("../Imagens/banner-principal-ps5.png");
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -304,7 +304,7 @@ h2 {
 .recursos {
     width: 100%;
     height: 170vh;
-    background: url("./Imagens/bg-horizon-zero-dawn.jpg");
+    background: url("../Imagens/bg-horizon-zero-dawn.jpg");
     background-size: cover;
     background-position: left bottom;
     padding: 60px 0;
@@ -486,7 +486,7 @@ h2 {
     width: 100%;
     height: 110vh;
     color: rgb(32, 32, 32);
-    background: url("imagens/bg-ps-plus-collection.jpg");
+    background: url("../Imagens/bg-ps-plus-collection.jpg");
     background-size: 120%;
     background-position: bottom right;
 }
@@ -527,7 +527,7 @@ h2 {
     width: 100%;
     height: 110vh;
     color: whitesmoke;
-    background: url("imagens/bg-miles-morales.jpg");
+    background: url("../Imagens/bg-miles-morales.jpg");
     background-size: cover;
     background-position: top right;
     padding: 60px 0;
@@ -707,7 +707,7 @@ footer {
 }
 
 .footer-regiao a::before {
-    content: url("Imagens/language-24px.svg");
+    content: url("../Imagens/language-24px.svg");
     vertical-align: top;
     margin-right: 10px;
 }
